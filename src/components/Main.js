@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import aboutPic from '../images/aboutPic.JPG'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import devBeatz from '../images/devBeatz-homepage.png'
+import projectify from '../images/projectify-homepage.png'
 
 class Main extends React.Component {
   render() {
@@ -72,24 +72,71 @@ class Main extends React.Component {
             }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Portfolio</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <a href="http://devbeatz.xyz">
+              <img src={devBeatz} alt="devBeatz homepage" />
+            </a>
           </span>
+          <h3>
+            <a href="http://www.devbeatz.xyz/#/">DEVBEATZ</a>{' '}
+            <a
+              href="https://github.com/devbeatz/devbeatz"
+              className="icon fa-github"
+            >
+              <span className="label">GitHub</span>
+            </a>
+          </h3>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            DevBeatz is the marketplace for aspiring producers and vocal artists
+              to trade their talents with each other. Producers registered onto
+              the site in order to upload their beats while vocal artists could
+              peruse through the selection. Producers had a customized dashboard
+              that tracked how much revenue they received from each individual
+              track, which tracks were their most popular, and which beats they
+              downloaded. Clients could browse through multiple genres of beats,
+              and they had the option to either purchase a beat for exclusive
+              rights or not.
+            <br />
+            <br />
+            This was a group project at DevMountain that was pitched,
+            wireframed, and developed within 2 weeks. I was responsible for the
+            visual design of the entire website and learned and implemented
+            ChartJS for the producers' dashboard.
+            <br />
+            <br />
+            <h4>Tech Used:</h4> HTML, CSS, Sass, AmazonS3, React JS, React
+            Hooks, Redux, React-Bootstrap, ChartJS, Express, NodeJS, PostgreSQL
           </p>
+          <span className="image main">
+            <a href="http://www.projectify.space">
+              <img src={projectify} alt="projectify homepage" />
+            </a>
+          </span>
+
+          <h3>
+            <a href="http://www.projectify.space">PROJECTIFY</a>{' '}
+            <a
+              href="https://github.com/tkxx/Projectify"
+              className="icon fa-github"
+            >
+              <span className="label">GitHub</span>
+            </a>
+          </h3>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            Projectify is a gamification of your task management experience.
+            Rather than running through a regular to-do list, give yourself more
+            incentive to finish! In Projectify, you are an alien that has
+            crash-landed on Earth and need money (points) to repair your
+            spaceship in order to head back home.
+            <br />
+            <br />
+            This was my personal project at DevMountain. I pitched, wireframed,
+            and developed the entire site within 2 weeks.
+            <br />
+            <br />
+            <h4>Tech Used:</h4> HTML, CSS, Sass, React JS, Redux,
+            React-Bootstrap, PostgreSQL, Node, Express, Stripe
           </p>
           {close}
         </article>
@@ -124,7 +171,10 @@ class Main extends React.Component {
             }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
+          <h2 className="major">Contact Me!</h2>
+          I'm open to <b>full-time positions</b> or <b>freelance work</b>. Please send a message, and I will respond as soon as I can!
+          <br />
+          <br />
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
@@ -149,29 +199,29 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
+              <a href="https://github.com/tkxx" className="icon fa-github">
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
               <a
-                href="https://twitter.com/HuntaroSan"
+                href="https://medium.com/@lazy.loading"
+                className="icon fa-medium"
+              >
+                <span className="label">Medium</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/lazyloading_"
                 className="icon fa-twitter"
               >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
+              <a href="https://instagram.com/lazy.loading" className="icon fa-instagram">
                 <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
               </a>
             </li>
           </ul>
