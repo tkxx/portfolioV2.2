@@ -1,24 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import peaceIcon from '../images/wocPeaceSign.svg'
 
 const Header = (props) => (
-    <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="logo">
-            <span className="icon fa-diamond"></span>
+    <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+        <div className="brand image">
+            <span className="icon woc-peace-fingers"></span>
+            <img
+                src={peaceIcon}
+                alt="tanned hand with red nail polish has two fingers up as peace symbol" />
+            {/* Peace sign image is from Canva. */}
         </div>
         <div className="content">
             <div className="inner">
-                <h1>Dimension</h1>
-                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+                <h1>Tabitha Sin</h1>
+                <p>Full stack web developer. Storyteller. Advocate.</p>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('intro') }}>Who</a></li>
+                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('work') }}>What</a></li>
+                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('about') }}>How</a></li>
+                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('contact') }}>Where</a></li>
             </ul>
         </nav>
     </header>
