@@ -15,7 +15,7 @@ import reduxIcon from '../images/reduxIcon.svg'
 import expressJSicon from '../images/expressJSicon.svg'
 import gitIcon from '../images/gitIcon.svg'
 import nodeJsIcon from '../images/nodeJSwhite.svg'
-import '../assets/css/techIcons.css'
+// import '../assets/css/techIcons.css'
 
 class Main extends React.Component {
   render() {
@@ -135,7 +135,7 @@ class Main extends React.Component {
             <img src={skillsImg} alt="" />
           </span>
           <h3>Tech Stack</h3>
-          <div className="tech-icons">
+          {/* <div className="tech-icons">
             <div>
               <img src={html5Icon} alt="html icon" className="icon-resize" />
               <span className="tech-skill">HTML</span>
@@ -193,7 +193,7 @@ class Main extends React.Component {
               <img src={gitIcon} alt="git icon" className="icon-resize" />{' '}
               <span className="tech-skill">Git/Github</span>
             </div>
-          </div>
+          </div> */}
           <p />
           <h3>Tech Education</h3>
           <b>Modern React with Redux (Udemy)</b> Oct 2019-Present
